@@ -15,8 +15,8 @@ obj-m := helloworld.o
 
 load:
 	sudo insmod helloworld.ko
-	dmesg | tail
+	sudo dmesg | tail
 
 unload:
 	sudo rmmod helloworld.ko
-	dmesg | tail
+	sudo dmesg | tail
